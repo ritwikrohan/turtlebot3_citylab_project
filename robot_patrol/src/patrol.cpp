@@ -17,7 +17,7 @@ public:
         laser_subscriber_ = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan", 10, std::bind(&Patrol::laserCallback, this, std::placeholders::_1),options1);
         velocity_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
         direction_ = 0.0;
-        timer_ = this->create_wall_timer(std::chrono::milliseconds(220),std::bind(&Patrol::controlLoop, this), timer_callback_group_);
+        timer_ = this->create_wall_timer(std::chrono::milliseconds(50),std::bind(&Patrol::controlLoop, this), timer_callback_group_);
     }
 
 private:
@@ -71,7 +71,7 @@ private:
         std::vector<float> ranges = laser_data->ranges;
 
         int num_ranges = ranges.size();
-        int window_size = 100;  
+        int window_size = 50;  
         double safest_angle = 0.0;
         double max_average_distance = 0.0;
 
@@ -112,7 +112,7 @@ private:
 
         geometry_msgs::msg::Twist velocity_msg;
         velocity_msg.linear.x = 0.1; //0.1 - (std::abs(0.25*direction_));
-        velocity_msg.angular.z = (direction_/1.5);
+        velocity_msg.angular.z = (direction_/2);
         RCLCPP_INFO(this->get_logger(), "safe pub = %f", direction_/2);
         velocity_publisher_->publish(velocity_msg);
     }
