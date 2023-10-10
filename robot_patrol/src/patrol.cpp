@@ -17,7 +17,7 @@ public:
         laser_subscriber_ = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan", 10, std::bind(&Patrol::laserCallback, this, std::placeholders::_1),options1);
         velocity_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
         direction_ = 0.0;
-        timer_ = this->create_wall_timer(std::chrono::milliseconds(50),std::bind(&Patrol::controlLoop, this), timer_callback_group_);
+        timer_ = this->create_wall_timer(std::chrono::milliseconds(100),std::bind(&Patrol::controlLoop, this), timer_callback_group_);
     }
 
 private:
@@ -71,7 +71,7 @@ private:
         std::vector<float> ranges = laser_data->ranges;
 
         int num_ranges = ranges.size();
-        int window_size = 50;  
+        int window_size = 80;  
         double safest_angle = 0.0;
         double max_average_distance = 0.0;
 
