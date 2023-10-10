@@ -97,7 +97,7 @@ private:
             // Update the safest direction if the current window has a larger average distance
             if (average_distance > max_average_distance) {
                 max_average_distance = average_distance;
-                safest_angle = laser_data->angle_min + i * laser_data->angle_increment;
+                safest_angle = laser_data->angle_min + (i+(window_size / 2)) * laser_data->angle_increment;
                 this->xedni = i;
             }
         }
@@ -111,8 +111,8 @@ private:
     void controlLoop() {
 
         geometry_msgs::msg::Twist velocity_msg;
-        velocity_msg.linear.x = 0.05; //0.1 - (std::abs(0.25*direction_));
-        velocity_msg.angular.z = (direction_/2.0);
+        velocity_msg.linear.x = 0.1; //0.1 - (std::abs(0.25*direction_));
+        velocity_msg.angular.z = (direction_);
         RCLCPP_INFO(this->get_logger(), "safe pub = %f", direction_/2);
         velocity_publisher_->publish(velocity_msg);
     }
