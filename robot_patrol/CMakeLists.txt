@@ -51,11 +51,15 @@ add_executable(direction_test_node src/test_service.cpp)
 ament_target_dependencies(direction_test_node rclcpp geometry_msgs sensor_msgs nav_msgs)
 rosidl_target_interfaces(direction_test_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
+add_executable(patrol_client_node src/patrol_with_service.cpp)
+ament_target_dependencies(patrol_client_node rclcpp geometry_msgs sensor_msgs nav_msgs)
+rosidl_target_interfaces(patrol_client_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 install(TARGETS
    patrol_node
    direction_server_node
    direction_test_node
+   patrol_client_node
    DESTINATION lib/${PROJECT_NAME}
  )
 
