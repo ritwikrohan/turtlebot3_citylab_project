@@ -1,0 +1,272 @@
+[0.055s] Invoking command in '/home/user/ros2_ws/src/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /home/user/ros2_ws/src/robot_patrol -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/src/install/robot_patrol
+[0.254s] -- The C compiler identification is GNU 9.3.0
+[0.353s] -- The CXX compiler identification is GNU 9.3.0
+[0.362s] -- Check for working C compiler: /usr/bin/cc
+[0.585s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.587s] -- Detecting C compiler ABI info
+[0.800s] -- Detecting C compiler ABI info - done
+[0.843s] -- Detecting C compile features
+[0.845s] -- Detecting C compile features - done
+[0.851s] -- Check for working CXX compiler: /usr/bin/c++
+[1.100s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.102s] -- Detecting CXX compiler ABI info
+[1.249s] -- Detecting CXX compiler ABI info - done
+[1.282s] -- Detecting CXX compile features
+[1.283s] -- Detecting CXX compile features - done
+[1.319s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.370s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.370s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.061s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.192s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.220s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.485s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.553s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.707s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.790s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.792s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.794s] -- Looking for pthread.h
+[2.878s] -- Looking for pthread.h - found
+[2.878s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.966s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.967s] -- Looking for pthread_create in pthreads
+[3.033s] -- Looking for pthread_create in pthreads - not found
+[3.033s] -- Looking for pthread_create in pthread
+[3.107s] -- Looking for pthread_create in pthread - found
+[3.108s] -- Found Threads: TRUE  
+[3.305s] -- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[3.351s] -- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+[3.437s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.519s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[3.539s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.671s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[3.824s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[4.248s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.441s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.476s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[4.481s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[4.514s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[4.514s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.514s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[4.515s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[4.540s] -- Found PythonExtra: .so  
+[4.776s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.778s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.780s] -- Configured cppcheck include dirs: 
+[4.780s] -- Configured cppcheck exclude dirs and/or files: 
+[4.781s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.781s] -- Configured cpplint exclude dirs and/or files: 
+[4.782s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.782s] -- Added test 'lint_cmake' to check CMake code style
+[4.783s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.784s] -- Added test 'uncrustify' to check C / C++ code style
+[4.784s] -- Configured uncrustify additional arguments: 
+[4.785s] -- Added test 'xmllint' to check XML markup files
+[4.796s] -- Configuring done
+[4.894s] -- Generating done
+[4.898s] -- Build files have been written to: /home/user/ros2_ws/src/build/robot_patrol
+[4.909s] Invoked command in '/home/user/ros2_ws/src/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /home/user/ros2_ws/src/robot_patrol -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/src/install/robot_patrol
+[4.913s] Invoking command in '/home/user/ros2_ws/src/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/robot_patrol -- -j8 -l8
+[4.968s] [35m[1mScanning dependencies of target robot_patrol__cpp[0m
+[4.981s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.363s] [  2%] Built target robot_patrol__cpp
+[5.374s] [35m[1mScanning dependencies of target patrol_node[0m
+[5.418s] [  5%] [32mBuilding CXX object CMakeFiles/patrol_node.dir/src/patrol.cpp.o[0m
+[11.202s] [  7%] [32m[1mLinking CXX executable patrol_node[0m
+[11.439s] [  7%] Built target patrol_node
+[11.453s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.720s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_fastrtps_cpp[0m
+[11.745s] [ 12%] [32mBuilding CXX object CMakeFiles/robot_patrol__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_patrol/srv/detail/dds_fastrtps/get_direction__type_support.cpp.o[0m
+[12.226s] [ 15%] [32m[1mLinking CXX shared library librobot_patrol__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.317s] [ 15%] Built target robot_patrol__rosidl_typesupport_fastrtps_cpp
+[12.330s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[12.582s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_introspection_cpp[0m
+[12.604s] [ 20%] [32mBuilding CXX object CMakeFiles/robot_patrol__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_patrol/srv/detail/get_direction__type_support.cpp.o[0m
+[12.938s] [ 23%] [32m[1mLinking CXX shared library librobot_patrol__rosidl_typesupport_introspection_cpp.so[0m
+[13.006s] [ 23%] Built target robot_patrol__rosidl_typesupport_introspection_cpp
+[13.018s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.247s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_cpp[0m
+[13.269s] [ 28%] [32mBuilding CXX object CMakeFiles/robot_patrol__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_patrol/srv/get_direction__type_support.cpp.o[0m
+[13.609s] [ 30%] [32m[1mLinking CXX shared library librobot_patrol__rosidl_typesupport_cpp.so[0m
+[13.657s] [ 30%] Built target robot_patrol__rosidl_typesupport_cpp
+[13.669s] [ 33%] [34m[1mGenerating C code for ROS interfaces[0m
+[13.969s] [35m[1mScanning dependencies of target robot_patrol__rosidl_generator_c[0m
+[13.984s] [ 35%] [32mBuilding C object CMakeFiles/robot_patrol__rosidl_generator_c.dir/rosidl_generator_c/robot_patrol/srv/detail/get_direction__functions.c.o[0m
+[14.035s] [ 38%] [32m[1mLinking C shared library librobot_patrol__rosidl_generator_c.so[0m
+[14.077s] [ 38%] Built target robot_patrol__rosidl_generator_c
+[14.091s] [ 41%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.353s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_fastrtps_c[0m
+[14.376s] [ 43%] [32mBuilding CXX object CMakeFiles/robot_patrol__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_patrol/srv/detail/get_direction__type_support_c.cpp.o[0m
+[14.783s] [ 46%] [32m[1mLinking CXX shared library librobot_patrol__rosidl_typesupport_fastrtps_c.so[0m
+[14.874s] [ 46%] Built target robot_patrol__rosidl_typesupport_fastrtps_c
+[14.887s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[15.144s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_introspection_c[0m
+[15.166s] [ 51%] [32mBuilding C object CMakeFiles/robot_patrol__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_patrol/srv/detail/get_direction__type_support.c.o[0m
+[15.206s] [ 53%] [32m[1mLinking C shared library librobot_patrol__rosidl_typesupport_introspection_c.so[0m
+[15.244s] [ 53%] Built target robot_patrol__rosidl_typesupport_introspection_c
+[15.256s] [ 56%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.482s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_c[0m
+[15.500s] [ 58%] [32mBuilding CXX object CMakeFiles/robot_patrol__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_patrol/srv/get_direction__type_support.cpp.o[0m
+[15.536s] [ 61%] [32m[1mLinking CXX shared library librobot_patrol__rosidl_typesupport_c.so[0m
+[15.585s] [ 61%] Built target robot_patrol__rosidl_typesupport_c
+[15.596s] [35m[1mScanning dependencies of target robot_patrol[0m
+[15.608s] [ 61%] Built target robot_patrol
+[15.619s] [35m[1mScanning dependencies of target direction_test_node[0m
+[15.681s] [ 64%] [32mBuilding CXX object CMakeFiles/direction_test_node.dir/src/test_service.cpp.o[0m
+[21.746s] [ 66%] [32m[1mLinking CXX executable direction_test_node[0m
+[22.011s] [ 66%] Built target direction_test_node
+[22.023s] [35m[1mScanning dependencies of target direction_server_node[0m
+[22.073s] [ 69%] [32mBuilding CXX object CMakeFiles/direction_server_node.dir/src/direction_service.cpp.o[0m
+[24.876s] [ 71%] [32m[1mLinking CXX executable direction_server_node[0m
+[25.032s] [ 71%] Built target direction_server_node
+[25.046s] [35m[1mScanning dependencies of target patrol_client_node[0m
+[25.099s] [ 74%] [32mBuilding CXX object CMakeFiles/patrol_client_node.dir/src/patrol_with_service.cpp.o[0m
+[35.428s] [ 76%] [32m[1mLinking CXX executable patrol_client_node[0m
+[35.877s] [ 76%] Built target patrol_client_node
+[35.893s] [35m[1mScanning dependencies of target robot_patrol__py[0m
+[35.939s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[36.829s] [ 79%] Built target robot_patrol__py
+[36.844s] [35m[1mScanning dependencies of target robot_patrol__python[0m
+[36.980s] [ 82%] [32mBuilding C object CMakeFiles/robot_patrol__python.dir/rosidl_generator_py/robot_patrol/srv/_get_direction_s.c.o[0m
+[37.202s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/robot_patrol/librobot_patrol__python.so[0m
+[37.296s] [ 84%] Built target robot_patrol__python
+[37.313s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_introspection_c__pyext[0m
+[37.370s] [ 87%] [32mBuilding C object CMakeFiles/robot_patrol__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_patrol/_robot_patrol_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[37.604s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/robot_patrol/robot_patrol_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[37.745s] [ 89%] Built target robot_patrol__rosidl_typesupport_introspection_c__pyext
+[37.808s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_c__pyext[0m
+[37.886s] [ 92%] [32mBuilding C object CMakeFiles/robot_patrol__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_patrol/_robot_patrol_s.ep.rosidl_typesupport_c.c.o[0m
+[38.087s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/robot_patrol/robot_patrol_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[38.228s] [ 94%] Built target robot_patrol__rosidl_typesupport_c__pyext
+[38.249s] [35m[1mScanning dependencies of target robot_patrol__rosidl_typesupport_fastrtps_c__pyext[0m
+[38.302s] [ 97%] [32mBuilding C object CMakeFiles/robot_patrol__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_patrol/_robot_patrol_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[38.646s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/robot_patrol/robot_patrol_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[38.802s] [100%] Built target robot_patrol__rosidl_typesupport_fastrtps_c__pyext
+[38.826s] Invoked command in '/home/user/ros2_ws/src/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/robot_patrol -- -j8 -l8
+[39.276s] Invoking command in '/home/user/ros2_ws/src/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/build/robot_patrol
+[39.318s] -- Install configuration: ""
+[39.318s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/ament_index/resource_index/rosidl_interfaces/robot_patrol
+[39.318s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol
+[39.319s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv
+[39.319s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail
+[39.319s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__functions.h
+[39.320s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__functions.c
+[39.320s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__struct.h
+[39.320s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__type_support.h
+[39.320s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/get_direction.h
+[39.321s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/msg
+[39.321s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/msg/rosidl_generator_c__visibility_control.h
+[39.321s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/library_path.sh
+[39.321s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/library_path.dsv
+[39.321s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_generator_c.so
+[39.322s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_generator_c.so" to ""
+[39.323s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol
+[39.323s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv
+[39.323s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail
+[39.323s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__rosidl_typesupport_fastrtps_c.h
+[39.324s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/msg
+[39.324s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[39.324s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_fastrtps_c.so
+[39.325s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_fastrtps_c.so" to ""
+[39.325s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol
+[39.325s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv
+[39.326s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail
+[39.326s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__rosidl_typesupport_fastrtps_cpp.hpp
+[39.326s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/dds_fastrtps
+[39.327s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/msg
+[39.327s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[39.327s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_fastrtps_cpp.so
+[39.327s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_fastrtps_cpp.so" to ""
+[39.328s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol
+[39.328s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv
+[39.328s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail
+[39.329s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__type_support.c
+[39.329s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__rosidl_typesupport_introspection_c.h
+[39.329s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/msg
+[39.330s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[39.330s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_introspection_c.so
+[39.331s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_introspection_c.so" to ""
+[39.331s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_c.so
+[39.331s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_c.so" to ""
+[39.332s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol
+[39.332s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv
+[39.332s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail
+[39.332s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__traits.hpp
+[39.333s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__builder.hpp
+[39.333s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__struct.hpp
+[39.333s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/get_direction.hpp
+[39.333s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol
+[39.334s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv
+[39.334s] -- Up-to-date: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail
+[39.334s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__type_support.cpp
+[39.335s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/include/robot_patrol/srv/detail/get_direction__rosidl_typesupport_introspection_cpp.hpp
+[39.335s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_introspection_cpp.so
+[39.335s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_introspection_cpp.so" to ""
+[39.335s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_cpp.so
+[39.335s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__rosidl_typesupport_cpp.so" to ""
+[39.336s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/pythonpath.sh
+[39.336s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/pythonpath.dsv
+[39.337s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/__init__.py
+[39.390s] Compiling '/home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/__init__.py'...
+[39.395s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/srv
+[39.395s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/srv/_get_direction.py
+[39.395s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/srv/__init__.py
+[39.396s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/srv/_get_direction_s.c
+[39.396s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/robot_patrol_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[39.397s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/robot_patrol_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[39.397s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/robot_patrol_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[39.398s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/robot_patrol_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[39.398s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/robot_patrol_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[39.399s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/python3.8/site-packages/robot_patrol/robot_patrol_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[39.399s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__python.so
+[39.400s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/librobot_patrol__python.so" to ""
+[39.400s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/srv/GetDirection.idl
+[39.401s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/srv/GetDirection.srv
+[39.401s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/srv/GetDirection_Request.msg
+[39.401s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/srv/GetDirection_Response.msg
+[39.402s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/patrol_node
+[39.406s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/patrol_node" to ""
+[39.406s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/direction_server_node
+[39.407s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/direction_server_node" to ""
+[39.407s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/direction_test_node
+[39.413s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/direction_test_node" to ""
+[39.414s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/patrol_client_node
+[39.420s] -- Set runtime path of "/home/user/ros2_ws/src/install/robot_patrol/lib/robot_patrol/patrol_client_node" to ""
+[39.420s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol//launch
+[39.421s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol//launch/main.launch.py
+[39.421s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol//launch/start_direction_service.launch.py
+[39.422s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol//launch/start_test_service.launch.py
+[39.423s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol//launch/start_patrolling.launch.py
+[39.423s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/ament_index/resource_index/package_run_dependencies/robot_patrol
+[39.424s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/ament_index/resource_index/parent_prefix_path/robot_patrol
+[39.425s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.sh
+[39.425s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.dsv
+[39.426s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/path.sh
+[39.427s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/environment/path.dsv
+[39.427s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/local_setup.bash
+[39.428s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/local_setup.sh
+[39.428s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/local_setup.zsh
+[39.428s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/local_setup.dsv
+[39.428s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/package.dsv
+[39.429s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/ament_index/resource_index/packages/robot_patrol
+[39.429s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_generator_cExport.cmake
+[39.430s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_generator_cExport-noconfig.cmake
+[39.431s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_typesupport_introspection_cExport.cmake
+[39.431s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[39.431s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_typesupport_cExport.cmake
+[39.432s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_typesupport_cExport-noconfig.cmake
+[39.432s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_generator_cppExport.cmake
+[39.433s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_typesupport_introspection_cppExport.cmake
+[39.434s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[39.435s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_typesupport_cppExport.cmake
+[39.435s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrol__rosidl_typesupport_cppExport-noconfig.cmake
+[39.436s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/rosidl_cmake-extras.cmake
+[39.436s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/ament_cmake_export_dependencies-extras.cmake
+[39.437s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/ament_cmake_export_libraries-extras.cmake
+[39.438s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/ament_cmake_export_targets-extras.cmake
+[39.438s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/ament_cmake_export_include_directories-extras.cmake
+[39.439s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[39.439s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[39.439s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig.cmake
+[39.440s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig-version.cmake
+[39.440s] -- Installing: /home/user/ros2_ws/src/install/robot_patrol/share/robot_patrol/package.xml
+[39.453s] Invoked command in '/home/user/ros2_ws/src/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/build/robot_patrol

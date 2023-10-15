@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robot_patrol/srv/GetDirection.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/LaserScan.idl"
+
+module robot_patrol {
+  module srv {
+    struct GetDirection_Request {
+      sensor_msgs::msg::LaserScan laser_data;
+    };
+    struct GetDirection_Response {
+      string direction;
+    };
+  };
+};

@@ -1,0 +1,6 @@
+{
+  "package_name": "robot_patrol",
+  "non_idl_tuples": [
+    "/home/user/ros2_ws/src/robot_patrol:srv/GetDirection.srv"
+  ]
+}
