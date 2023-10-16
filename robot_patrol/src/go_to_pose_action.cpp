@@ -69,7 +69,7 @@ private:
     {
         this->desired_pos_.x = goal->goal_pos.x;
         this->desired_pos_.y = goal->goal_pos.y;
-        this->desired_pos_.theta = (goal->goal_pos.theta) * M_PI / 180.0;
+        this->desired_pos_.theta = normalizeAngle((goal->goal_pos.theta) * M_PI / 180.0);
         (void)uid;
         return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
     }
@@ -104,9 +104,9 @@ private:
                 RCLCPP_INFO(get_logger(), "Goal canceled");
                 return;
             }
-        double dtg_tolerance = 0.1; //distance to goal tolerance
+        double dtg_tolerance = 0.2; //distance to goal tolerance
         double atg_tolerance = 0.5; //angle to goal tolerance
-        double orientation_tolerance = 0.3;
+        double orientation_tolerance = 0.1;
         double delta_x = this->desired_pos_.x - this->current_pos_.x;
         double delta_y = this->desired_pos_.y - this->current_pos_.y;
         double euclidean_distance = sqrt(pow(delta_x,2)+pow(delta_y,2));
@@ -122,16 +122,29 @@ private:
         }
         else if (std::abs(orientation_difference) > orientation_tolerance && covering_orientation){
             covering_distance = false;
-            double delta_yaw_n = normalizeAngle(this->desired_pos_.theta);
-            if (delta_yaw_n > 0) {
-                 vel_.angular.z = 1.0;
-                vel_.linear.x = 0.0;
-                vel_pub_->publish(vel_);
+            double delta_yaw_n = normalizeAngle(this->desired_pos_.theta - this->current_pos_.theta);
+
+            
+            double clockwise_rotation = delta_yaw_n;
+            double counterclockwise_rotation = 2.0 * M_PI - std::abs(delta_yaw_n);
+
+            
+            if (std::abs(clockwise_rotation) < std::abs(counterclockwise_rotation)) {
+                if (delta_yaw_n >= 0) {
+                    vel_.angular.z = 1.0; 
+                } else {
+                    vel_.angular.z = -1.0; 
+                }
             } else {
-                vel_.angular.z = -1.0;
-                vel_.linear.x = 0.0;
-                vel_pub_->publish(vel_); 
-            }   
+                if (delta_yaw_n >= 0) {
+                    vel_.angular.z = -1.0; 
+                } else {
+                    vel_.angular.z = 1.0; 
+                }
+            }
+
+            vel_.linear.x = 0.0;
+            vel_pub_->publish(vel_);
         }
         else{
             covering_distance = false;
