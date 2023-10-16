@@ -18,6 +18,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
@@ -37,7 +38,8 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetDirection.srv"
-  DEPENDENCIES sensor_msgs
+  "action/GoToPose.action"
+  DEPENDENCIES sensor_msgs geometry_msgs
 )
 
 add_executable(patrol_node src/patrol.cpp)
@@ -55,11 +57,16 @@ add_executable(patrol_client_node src/patrol_with_service.cpp)
 ament_target_dependencies(patrol_client_node rclcpp geometry_msgs sensor_msgs nav_msgs)
 rosidl_target_interfaces(patrol_client_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
+add_executable(gotopose_node src/go_to_pose_action.cpp)
+ament_target_dependencies(gotopose_node rclcpp rclcpp_action geometry_msgs sensor_msgs nav_msgs)
+rosidl_target_interfaces(gotopose_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 install(TARGETS
    patrol_node
    direction_server_node
    direction_test_node
    patrol_client_node
+   gotopose_node
    DESTINATION lib/${PROJECT_NAME}
  )
 
